@@ -1,20 +1,21 @@
 // Areas.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
 //
 
-#include <stdio.h>
+#include <iostream>
 
-int main() {
-    float lado, area;
+int main()
+{
+    int area;
+    int altura;
+    int base;
+    printf("Altura:");
+    scanf_s("%i", &altura);
+    printf("Base:");
+    scanf_s("%i", &base);
+    area = base * altura;
+    printf("El cuadrado de %i x %i tiene area de %i", base, altura, area);
 
-    printf("Ingrese la longitud del lado del cuadrado: ");
-    scanf("%f", &lado);
 
-    // Calcula el área del cuadrado
-    area = lado * lado;
-
-    printf("El área del cuadrado es: %.2f\n", area);
-
-    return 0;
 }
 
 
